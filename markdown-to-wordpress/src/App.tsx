@@ -225,15 +225,74 @@ function App() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8 }}
-        className="features"
+        className="conversion-examples"
       >
-        <h3>変換機能</h3>
-        <ul>
-          <li>**太字** → &lt;span class="huto"&gt;太字&lt;/span&gt;</li>
-          <li>$数式$ → \(数式\)</li>
-          <li>$$ブロック数式$$ → そのまま維持</li>
-          <li>見出し、リンク、画像、リストなども変換</li>
-        </ul>
+        <h3>変換例と使い方</h3>
+        
+        <div className="example-grid">
+          <div className="example-card">
+            <h4>📝 基本的な文字装飾</h4>
+            <div className="example-item">
+              <code className="markdown">**太字のテキスト**</code>
+              <span className="arrow">→</span>
+              <code className="wordpress">&lt;span class="huto"&gt;太字のテキスト&lt;/span&gt;</code>
+            </div>
+            <div className="example-item">
+              <code className="markdown">*斜体のテキスト*</code>
+              <span className="arrow">→</span>
+              <code className="wordpress">&lt;em&gt;斜体のテキスト&lt;/em&gt;</code>
+            </div>
+          </div>
+
+          <div className="example-card">
+            <h4>🔢 数式の変換</h4>
+            <div className="example-item">
+              <code className="markdown">$x^2 + y^2 = z^2$</code>
+              <span className="arrow">→</span>
+              <code className="wordpress">\(x^2 + y^2 = z^2\)</code>
+            </div>
+            <div className="example-item">
+              <code className="markdown">$$E = mc^2$$</code>
+              <span className="arrow">→</span>
+              <code className="wordpress">$$E = mc^2$$ (そのまま)</code>
+            </div>
+          </div>
+
+          <div className="example-card">
+            <h4>📌 見出しとリンク</h4>
+            <div className="example-item">
+              <code className="markdown"># 大見出し</code>
+              <span className="arrow">→</span>
+              <code className="wordpress">&lt;h1&gt;大見出し&lt;/h1&gt;</code>
+            </div>
+            <div className="example-item">
+              <code className="markdown">[リンク](https://example.com)</code>
+              <span className="arrow">→</span>
+              <code className="wordpress">&lt;a href="https://example.com"&gt;リンク&lt;/a&gt;</code>
+            </div>
+          </div>
+
+          <div className="example-card">
+            <h4>📋 リストとコード</h4>
+            <div className="example-item">
+              <code className="markdown">- リスト項目</code>
+              <span className="arrow">→</span>
+              <code className="wordpress">&lt;ul&gt;&lt;li&gt;リスト項目&lt;/li&gt;&lt;/ul&gt;</code>
+            </div>
+            <div className="example-item">
+              <code className="markdown">`インラインコード`</code>
+              <span className="arrow">→</span>
+              <code className="wordpress">&lt;code&gt;インラインコード&lt;/code&gt;</code>
+            </div>
+          </div>
+        </div>
+
+        <div className="usage-tips">
+          <h4>💡 使い方のヒント</h4>
+          <p>• 左側にMarkdownを入力すると、リアルタイムで右側に変換結果が表示されます</p>
+          <p>• WordPressで数式を表示するには、MathJaxプラグインが必要です</p>
+          <p>• 太字表示には、WordPressのCSSに <code>.huto {"{"} font-weight: bold; {"}"}</code> を追加してください</p>
+        </div>
       </motion.div>
     </div>
   );
