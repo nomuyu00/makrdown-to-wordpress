@@ -4,7 +4,7 @@
 
 このツールは、Markdown記法で書かれた文章をWordPress用の記法に自動変換するWebアプリケーションです。特に数式を含む技術文書やブログ記事の執筆に便利です。
 
-🔗 **アプリURL**: [https://nomuyu00.github.io/markdown-to-wordpress](https://nomuyu00.github.io/markdown-to-wordpress)
+🔗 **アプリURL**: [https://nomuyu00.github.io/markdown-to-wordpress](https://nomuyu00.github.io/makrdown-to-wordpress/)
 
 ## 主な機能
 
@@ -116,5 +116,3 @@ MIT License
 nomuyu00
 
 ---
-
-何か問題や要望がありましたら、[Issues](https://github.com/nomuyu00/markdown-to-wordpress/issues)にお願いします。
