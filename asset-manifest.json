@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/markdown-to-wordpress/static/css/main.6f060c7e.css",
+    "main.js": "/markdown-to-wordpress/static/js/main.dfdb2b7f.js",
+    "static/js/453.46a226ec.chunk.js": "/markdown-to-wordpress/static/js/453.46a226ec.chunk.js",
+    "index.html": "/markdown-to-wordpress/index.html",
+    "main.6f060c7e.css.map": "/markdown-to-wordpress/static/css/main.6f060c7e.css.map",
+    "main.dfdb2b7f.js.map": "/markdown-to-wordpress/static/js/main.dfdb2b7f.js.map",
+    "453.46a226ec.chunk.js.map": "/markdown-to-wordpress/static/js/453.46a226ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f060c7e.css",
+    "static/js/main.dfdb2b7f.js"
+  ]
+}
